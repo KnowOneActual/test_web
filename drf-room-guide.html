@@ -152,14 +152,25 @@
       font-size: 0.68rem;
       color: var(--muted);
     }
+    /* Collapsible floor-plan toggles */
     .floor-plan {
       margin: 0 0 0.5rem;
+    }
+    .floor-plan summary {
+      cursor: pointer;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding: 0.25rem 0;
+    }
+    .floor-plan[open] summary {
+      color: var(--accent);
     }
     .floor-plan img {
       width: 100%;
       height: auto;
       border-radius: 0.5rem;
       border: 1px solid var(--border);
+      margin-top: 0.25rem;
     }
     @media (min-width: 720px) {
       header, main {
@@ -186,7 +197,7 @@
     </nav>
   </header>
   <main>
-    <p class="hint">Tip: add this page to your phone home screen for one-tap access when you are on call.</p>
+    <p class="hint">Tip: tap a floor-plan label only when you need the diagram – the rest stays focused on room names and capacities.</p>
 
     <section id="ground" class="floor">
       <div class="floor-label">Ground level</div>
@@ -225,12 +236,13 @@
       <h2>University Room Neighborhood</h2>
       <p class="floor-meta">Largest indoor space – plenaries, keynotes, banquets.</p>
 
-      <figure class="floor-plan">
+      <details class="floor-plan">
+        <summary>Show University Room floor plan</summary>
         <img
           src="https://davidrubensteinforum.uchicago.edu/files/2023/01/University.png"
           alt="David Rubenstein Forum University Room floor plan"
           loading="lazy">
-      </figure>
+      </details>
 
       <div class="room-list">
         <article class="room-card">
@@ -276,12 +288,13 @@
       <h2>Friedman Hall Neighborhood</h2>
       <p class="floor-meta">Two-story auditorium and associated prefunction.</p>
 
-      <figure class="floor-plan">
+      <details class="floor-plan">
+        <summary>Show 3rd/4th floor plan</summary>
         <img
           src="https://davidrubensteinforum.uchicago.edu/files/2023/01/4th-Floor.png"
           alt="David Rubenstein Forum 4th Floor and Friedman Hall floor plan"
           loading="lazy">
-      </figure>
+      </details>
 
       <div class="room-list">
         <article class="room-card">
@@ -314,12 +327,13 @@
       <h2>Standard Meeting Rooms</h2>
       <p class="floor-meta">Flat meeting rooms for breakouts and mid-size sessions.</p>
 
-      <figure class="floor-plan">
+      <details class="floor-plan">
+        <summary>Show 5th floor plan</summary>
         <img
           src="https://davidrubensteinforum.uchicago.edu/files/2023/01/5th-Floor.png"
           alt="David Rubenstein Forum 5th Floor plan"
           loading="lazy">
-      </figure>
+      </details>
 
       <div class="room-list">
         <article class="room-card">
@@ -370,12 +384,13 @@
       <h2>Tiered & Kapani Lounge</h2>
       <p class="floor-meta">Tiered meeting room, flat room, and Kapani Family Lounge.</p>
 
-      <figure class="floor-plan">
+      <details class="floor-plan">
+        <summary>Show 6th floor / Kapani plan</summary>
         <img
           src="https://davidrubensteinforum.uchicago.edu/files/2023/01/Kapani-Lounge.png"
           alt="David Rubenstein Forum 6th Floor Kapani Family Lounge plan"
           loading="lazy">
-      </figure>
+      </details>
 
       <div class="room-list">
         <article class="room-card">
@@ -402,12 +417,13 @@
       <h2>Elevated Standard Rooms</h2>
       <p class="floor-meta">Higher-floor flat rooms with strong views.</p>
 
-      <figure class="floor-plan">
+      <details class="floor-plan">
+        <summary>Show 7th floor plan</summary>
         <img
           src="https://davidrubensteinforum.uchicago.edu/files/2023/01/7th-floor-.png"
           alt="David Rubenstein Forum 7th Floor plan"
           loading="lazy">
-      </figure>
+      </details>
 
       <div class="room-list">
         <article class="room-card">
@@ -434,12 +450,13 @@
       <h2>800-Series Meeting Rooms</h2>
       <p class="floor-meta">Flat rooms in the tower with strong campus and city views.</p>
 
-      <figure class="floor-plan">
+      <details class="floor-plan">
+        <summary>Show 8th floor plan</summary>
         <img
           src="https://davidrubensteinforum.uchicago.edu/files/2023/03/8th-Floor.png"
           alt="David Rubenstein Forum 8th Floor plan"
           loading="lazy">
-      </figure>
+      </details>
 
       <div class="room-list">
         <article class="room-card">
@@ -466,12 +483,13 @@
       <h2>Boardroom Neighborhood</h2>
       <p class="floor-meta">Executive tiered boardroom plus small meeting room.</p>
 
-      <figure class="floor-plan">
+      <details class="floor-plan">
+        <summary>Show 9th floor plan</summary>
         <img
           src="https://davidrubensteinforum.uchicago.edu/files/2023/01/9th-floor.png"
           alt="David Rubenstein Forum 9th Floor plan"
           loading="lazy">
-      </figure>
+      </details>
 
       <div class="room-list">
         <article class="room-card">
@@ -501,12 +519,13 @@
       <h2>City View Neighborhood</h2>
       <p class="floor-meta">Top-floor panoramic event space.</p>
 
-      <figure class="floor-plan">
+      <details class="floor-plan">
+        <summary>Show City View floor plan</summary>
         <img
           src="https://davidrubensteinforum.uchicago.edu/files/2022/11/City-View-Floor-Plan.png"
           alt="David Rubenstein Forum City View 10th Floor plan"
           loading="lazy">
-      </figure>
+      </details>
 
       <div class="room-list">
         <article class="room-card">
